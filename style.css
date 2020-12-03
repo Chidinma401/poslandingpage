@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	font-family: sans-serif;
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 #nav-bar{
 	position: sticky;
@@ -74,9 +74,17 @@ body{
 	width: 100px;
 	margin-top:20px; 
 }
+.services:hover{
+	background-image: linear-gradient(to right, #205072,#0B1A40);
+	color: white;
+	transition-property: 5s;
+
+}
 
 .services{
 	padding: 20px;
+	transform: translateY(-5px);
+	cursor: pointer;
 }
 .service h4{
 	padding: 5px;
@@ -87,8 +95,8 @@ body{
 .title::before{
 	content: '';
 	background: #205072;
-	height: 5px;
-	width: 50%;
+	height: 0px;
+	width: 5%;
 	margin-left:auto;
 	margin-right: auto;
 	display: block;
@@ -98,8 +106,8 @@ body{
 .title::after{
 	content: '';
 	background: #0B1A40;
-	height: 10px;
-	width: 50px
+	height: 1px;
+	width:20%;
 	margin-left:auto;
 	margin-right: auto;
 	margin-bottom: 40px;
@@ -118,35 +126,110 @@ body{
 	background: #f8f9fa;
 	padding-bottom: 50px;
 	padding-top: 50px; 
-	font-size: 14px; 
+	font-size: 18px; 
+	/*background-image: linear-gradient(to right, #205072,#0B1A40);*/
 }
 
 .benefit-title{
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
-	margin-top: 8%;
+	/*margin-top: 8%;*/
 }
 
 #benefit ul li{
 	margin: 10px 0;
-	list-style-type: none;
+	/*list-style-type: none;*/
+	text-align: justify;
+	font-size: 16px;
+
 
 }
 #benefit ul{
 	margin-left: 20px;
+	/*background-image: linear-gradient(to right, #205072,#0B1A40);*/
+	/*color: white;*/
 }
+
+/*#benefit ul:hover{
+	background: #205075;
+	color: white;
+}*/
+#benefit p{
+	/*margin: 10px 0;*/
+	font-size: 16px;
+	text-align: justify;
+}
+
+.faq{
+	border-left: 3px solid #205072;
+	color: black;
+}
+
+.faq u{
+	color: #205072;
+	cursor: pointer;
+}
+.new-faq{
+	background: #f8f9fa;
+	cursor: pointer;
+}
+
+.new-faq u{
+	color: #205072;
+}
+
+
+/*about us*/
+#about_us{
+	background: #f8f9fa;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	font-size: 16px;
+
+}
+.about {
+	font-size: 16px;
+	font-size: bold;
+	text-align: justify;
+}
+#about_us p{
+	font-size: 18px;
+	text-align: justify;
+}
+
+.about_btn{
+	background-image: linear-gradient(to right, #205072,#0B1A40);
+	font-size: 20px;
+	transition: color;
+
+}
+.about_btn::hover{
+	background-color: #fff;
+	text-decoration: none;
+	 transition: 0.5s;
+}
+
 /*product secetion*/
 #product{
-margin: 100px 0;
+margin: 10px;
+background: #f8f9fa;
+}
+
+.item{
+	margin: 20px;
+	padding: 20px;
+	/*width: 100px;*/
+	/*height: 40px;*/
+
 }
 
 /*social-media section*/
 #social-media{
 	 background: #f8f9fa;
-	 padding:100px 0;
+	 /*padding:100px 0;*/
 }
 #social-media p{
-	font-size: 36px;
+	font-size: 16px;
 	font-weight: bold;
 	font-weight: 600;
 	margin-bottom: 30px;
@@ -154,7 +237,7 @@ margin: 100px 0;
 
 .social-icons .fab{
 	/*width: 600px;*/
-	margin: 20px 10px;
+	margin: 20px;
 	/*border-radius: 50%;*/
 	color: #0B1A40;
 	transition: 0.5s;
@@ -208,6 +291,7 @@ margin: 100px 0;
 	border: none;
 	border-radius: 0;
 	margin-top: 30px;
+	margin-left: 20px;
 	background-image: linear-gradient(to right, #205072,#0B1A40);
 }
 
